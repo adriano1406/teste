@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Notícias e Publicidade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4b0082;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+            color: #ffffff;
+        }
+        .container {
+            padding: 20px;
+        }
+        .news-category {
+            margin-bottom: 20px;
+        }
+        .news-category h2 {
+            background-color: #4b0082;
+            padding: 10px;
+        }
+        .news-item {
+            background-color: #2e2e2e;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .advertisement {
+            background-color: #4b0082;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #333;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        form {
+            background-color: #2e2e2e;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #4b0082;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #3a006e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site de Notícias e Publicidade</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#noticias">Notícias</a>
+        <a href="#publicidade">Publicidade</a>
+        <a href="#sobre-nos">Sobre Nós</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Home</h2>
+            <div class="advertisement">Espaço para publicidade</div>
+            <div class="news-item">
+                <h3>Destaque da Semana</h3>
+                <p>Notícia importante com detalhes...</p>
+            </div>
+        </section>
+        <section id="noticias">
+            <h2>Notícias</h2>
+            <div class="news-category">
+                <h2>Política</h2>
+                <div class="news-item">
+                    <h3>Notícia de Política 1</h3>
+                    <p>Detalhes da notícia...</p>
+                </div>
+                <div class="news-item">
+                    <h3>Notícia de Política 2</h3>
+                    <p>Detalhes da notícia...</p>
+                </div>
+            </div>
+            <div class="news-category">
+                <h2>Esportes</h2>
+                <div class="news-item">
+                    <h3>Notícia de Esportes 1</h3>
+                    <p>Detalhes da notícia...</p>
+                </div>
+                <div class="news-item">
+                    <h3>Notícia de Esportes 2</h3>
+                    <p>Detalhes da notícia...</p>
+                </div>
+            </div>
+            <div class="news-category">
+                <h2>Tecnologia</h2>
+                <div class="news-item">
+                    <h3>Notícia de Tecnologia 1</h3>
+                    <p>Detalhes da notícia...</p>
+                </div>
+                <div class="news-item">
+                    <h3>Notícia de Tecnologia 2</h3>
+                    <p>Detalhes da notícia...</p>
+                </div>
+            </div>
+            <div class="news-category">
+                <h2>Entretenimento</h2>
+                <div class="news-item">
+                    <h3>Notícia de Entretenimento 1</h3>
+                    <p>Detalhes da notícia...</p>
+                </div>
+                <div class="news-item">
+                    <h3>Notícia de Entretenimento 2</h3>
+                    <p>Detalhes da notícia...</p>
+                </div>
+            </div>
+        </section>
+        <section id="publicidade">
+            <h2>Publicidade</h2>
+            <div class="advertisement">
+                <h3>Anuncie Conosco</h3>
+                <p>Informações sobre como anunciar no nosso site...</p>
+            </div>
+        </section>
+        <section id="sobre-nos">
+            <h2>Sobre Nós</h2>
+            <p>Descrição da equipe e missão do site...</p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Site de Notícias e Publicidade. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
